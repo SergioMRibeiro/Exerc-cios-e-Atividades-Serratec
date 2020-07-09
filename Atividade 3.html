@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="width: 20px; height: 20px; border-radius: 50%;" id="teste"></div>
+        <script>
+            var numero = 10//parseInt(prompt("Qual numero você deseja pesquisar?"));
+            var limite = 15//parseInt(prompt("Qual o limite que você gostaria de atribuir a tabuada?"));
+            
+            document.write('Seu número é ' + numero + '<br>O limite é: ' + limite +'<br><br>Tabuada:<br>');
+            for(var i = 0; i < limite + 1; i++){
+                var result = i * numero;
+                if(result % 2 == 0){
+                    document.write(i + ' x ' + numero + ' = ' + result + ' Par<br>');
+                }
+                else{
+                    document.write(i + ' x ' + numero + ' = ' + i * numero + ' Ímpar<br>');
+                }
+            }
+            document.getElementById('teste').style.background = 'red';
+            // var cont = 1
+            // while(cont <= limite){
+            //     cont++;
+            //     document.write(cont + ' x ' + numero + ' = ' + cont * numero + '<br>');
+            // }
+
+        </script>
+    </body>
+</html>

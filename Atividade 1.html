@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title>Exercício Sérgio</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/08-07-20.css"
+    </head>
+    <body>
+        <script>
+            var num1 = parseInt(prompt('Digite sua nota 1'));
+            var num2 = parseInt(prompt('Digite sua nota 2'));
+            var num3 = parseInt(prompt('Digite sua nota 3'));
+            var num4 = parseInt(prompt('Digite sua nota 4'));
+            ///var tela = ''
+
+            document.write('Soma:<br>Primeira nota: ' + num1 +'<br>Primeira nota: ' + num2 +'<br>Primeira nota: ' + num3 +'<br>Primeira nota: ' + num4 +'<br><br>' + 'TOTAL: ' + (num1 + num2 + num3 + num4) + '<br>' + 'média: ' +  (num1 + num2 + num3 + num4)/4)
+        </script>
+        <div id="caixa_de_resultado"></div>
+        <div>
+            <script>
+                if(isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)){
+                    alert("Sua nota não foi preenchida corretamente");
+                    document.write('<br><br><h1>Repita o processo.</h1>');
+                    document.getElementById('caixa_de_resultado').style.background = 'gray';
+                }
+                else if((num1 + num2 + num3 + num4)/4 < 60){
+                    alert("Sua nota está abaixo da média");
+                    document.write('<h1>Aluno está de recuperação</h1>');
+                    ///var tela = "aprovado"
+                    document.getElementById("caixa_de_resultado").style.background = 'red';
+                    document.inputEncoding()
+
+                }
+                else{
+                    document.write('<h1>Aluno aprovado<h1/>');
+                    ///var tela = 'reprovado'
+                    document.getElementById("caixa_de_resultado").style.background = 'green';
+
+                }
+            </script>
+        </div>
+    </body>
+</html>
