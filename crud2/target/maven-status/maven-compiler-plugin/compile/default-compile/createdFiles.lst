@@ -1,0 +1,4 @@
+org/serratec/curso2java/crud2/domain/Todo.class
+org/serratec/curso2java/crud2/Crud2Application.class
+org/serratec/curso2java/crud2/services/TodoService.class
+org/serratec/curso2java/crud2/controllers/TodoController.class
